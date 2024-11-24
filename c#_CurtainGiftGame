@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HelloWorldConsole
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string message = string.Empty;
+            bool isContinuePlaying = true;
+            bool isYesOrNo = true;
+
+            while (isContinuePlaying)
+            {
+                isYesOrNo = true;
+                Console.WriteLine("Sharing Gifts");
+                Console.WriteLine("Pick a curtain to see what she is hiding. Curtain 1, 2 or 3");
+                string userInput = Console.ReadLine();
+
+                switch (userInput)
+                {
+                    case "1":
+                        message = "You won a bicycle";
+                        break;
+                    case "2":
+                        message = "You won a car";
+                        break;
+                    case "3":
+                        message = "You didn't win something this time. Try again and maybe you will stand luckier the next time";
+                        break;
+                    default:
+                        message = "I didn't understand what you meant. Please try to select a number between 1 ,2 or 3.";
+                        message = "What don't you understand?";
+                        break;
+                }
+
+                Console.WriteLine(message);
+
+                Console.WriteLine("\nDo you want to try again?: Yes/No");
+                string playAgain = Console.ReadLine();
+
+                while (isYesOrNo)
+                {
+                    switch (playAgain)
+                    {
+                        case "Yes":
+                            isYesOrNo = false;
+                            break;
+                        case "No":
+                            isContinuePlaying = false;
+                            isYesOrNo = false;
+                            break;
+                        default:
+                            Console.WriteLine("You must answer with 'Yes' or 'No");
+                            break;
+                    }
+                }
+                
+            }
+        }
+    }
+ }
