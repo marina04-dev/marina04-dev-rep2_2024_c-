@@ -1,0 +1,20 @@
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        float a,b; 
+        Console.WriteLine ("Give me the first number: ");
+        a = float.Parse(Console.ReadLine());
+        Console.WriteLine ("Give me the second number: ");
+        b = float.Parse(Console.ReadLine());
+        if (a==b) {
+            Console.WriteLine ("The first number is equal to the second");
+        }
+        else {
+            Console.WriteLine ("The first number is not equal to the second");
+        }
+    }
+}
