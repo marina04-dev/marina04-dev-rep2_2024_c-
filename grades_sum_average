@@ -1,0 +1,18 @@
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        float chemistry,biology,sum,average;
+        Console.WriteLine ("Give me the grade of chemistry");
+        chemistry = float.Parse(Console.ReadLine());
+        Console.WriteLine ("Give me the grade of biology");
+        biology = float.Parse(Console.ReadLine());
+        sum = chemistry + biology;
+        Console.WriteLine ("The sum of your grades is: "+ sum);
+        average = (chemistry+biology)/2;
+        Console.WriteLine ("The average of your grades is: " + average);
+    }
+}
