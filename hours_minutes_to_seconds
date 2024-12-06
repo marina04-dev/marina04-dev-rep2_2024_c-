@@ -1,0 +1,21 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int hours,seconds,minutes;
+        Console.WriteLine("Give the hour: ");
+        hours = Int32.Parse(Console.ReadLine());
+        Console.WriteLine("Give the minutes: ");
+        minutes = Int32.Parse(Console.ReadLine());
+        Console.WriteLine("Give the seconds: ");
+        seconds = Int32.Parse(Console.ReadLine());
+        
+        int nhours= hours*3600;
+        int nminutes = minutes*60;
+        
+        Console.WriteLine(nhours + " seconds for the hours you have given and " + nminutes + " seconds for the minutes you have given and "+ seconds+ " for the seconds you have given");
+        
+    }
+}
